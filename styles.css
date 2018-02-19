@@ -5,6 +5,8 @@ body {
 h1 {
     color: navy;
     margin-left: 20px;
+    font-family: comic sans;
+    font-size: 40px;
 }
 
 p.dotted {outline-style: dotted;}
@@ -18,5 +20,5 @@ p.outset {outline-style: outset;}
 
 p {
     font-family: comic sans;
-    font-size: 40px;
+    font-size: 20px;
 }
