@@ -1,0 +1,47 @@
+body {
+    background-color: gold;
+}
+
+h1 {
+    color: black;
+    margin-left: 20px;
+    font-family: comic sans;
+    font-size: 40px;
+}
+
+p.dotted {
+    outline-style: dotted;
+}
+
+p.dashed {
+    outline-style: dashed;
+}
+
+p.solid {
+    outline-style: solid;
+}
+
+p.double {
+    outline-style: double;
+}
+
+p.groove {
+    outline-style: groove;
+}
+
+p.ridge {
+    outline-style: ridge;
+}
+
+p.inset {
+    outline-style: inset;
+}
+
+p.outset {
+    outline-style: outset;
+}
+
+p {
+    font-family: comic sans;
+    font-size: 20px;
+}
