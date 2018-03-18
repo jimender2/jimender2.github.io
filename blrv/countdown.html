@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body {
+  -webkit-animation: colorchange 60s infinite; 
+  animation: colorchange 60s infinite;
+    text-align: center;
+}
+p1 {
+  font-size: 250px;
+  color: red; 
+}
+p2 {
+  font-size: 150px;
+  color: yellow; 
+}
+ 
+@-webkit-keyframes colorchange {
+ 
+     0%  {background: #4286f4;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}
+ 
+ 
+@keyframes colorchange {
+     0%  {background: #4286f4;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}   
+
+</style>
+</head>
+<body>
+<p1 id="demo"></p1>
+<p></p>
+<p2 id="test"></p2>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 28 17 7:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + " days";
+    document.getElementById("test").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "School has begun";
+        document.getElementById("test").innerHTML = ":(";
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
