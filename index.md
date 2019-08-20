@@ -1,4 +1,6 @@
-###jimender2's webpage
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-##About
-I am a college student at Ashland University in Ashland Ohio. I am majoring in Computer Science with minors in Management Information Systems and CyberSecurity.
+layout: home
+---
