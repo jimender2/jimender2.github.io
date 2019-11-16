@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>What came first? The chicken or the egg.</h1>
+
+<button type="button"
+onclick="document.getElementById('chickenoregg').innerHTML = chicken()">
+Chicken or egg?</button>
+
+<script>
+function chicken() {
+  return egg();
+  console.log("Chicken");
+}
+function egg() {
+  return chicken();
+  console.log("Egg");
+}
+</script>
+
+<p id="chickenoregg">The ________ came first.</p>
+
+</body>
+</html>
